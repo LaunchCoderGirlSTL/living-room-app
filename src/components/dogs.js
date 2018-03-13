@@ -5,7 +5,7 @@ import NavBar from './nav';
 
 export const DogsAPI = {
 	dogs: [
-		{name: 'Dachshunds', qualities: ['intelligent', 'inquisitive', 'well-shaped', 'excellent badger hunters']}, 
+		{name: 'Dachshunds', qualities: ['intelligent', 'inquisitive', 'well-shaped', 'excellent badger hunters', 'creative']}, 
 		{name: 'All other dogs', qualities: ['im sure theyre all very good in their own (inferior) ways', 'i dont really believe dachshunds are a superior breed. i just grew up with them so they have a special place in my brain.']}
 	], 
 	all: function() { return this.dogs },

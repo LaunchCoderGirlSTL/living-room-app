@@ -8,21 +8,25 @@ class DogDetails extends Component {
 		console.log(DogsAPI.get);
 		console.log(dog.qualities)
 		return (
-			<div className="container">
+			<div>
 				<NavBar />
-				<h1>{dog.name}</h1>				
-				
-				<h2>{dog.qualities}</h2>
-							
+				<div className="container">				
+					<h1>{dog.name}</h1>				
+					
+					{
+						dog.qualities.map(q => (
+							<li>{q}</li>
+							))
+					}
+								
+				</div>
 			</div>
 			)
-		
 	}
 }
 
 export default DogDetails;
 
-// 
 
 
 
@@ -45,8 +49,4 @@ export default DogDetails;
 
 
 
-// {
-// 					dog.qualities.map(q => (
-// 						<li>{q}</li>
-// 						))
-// 				}
+
